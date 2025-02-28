@@ -1,0 +1,123 @@
+*{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    font-size: 200px;
+    opacity: 0.2;
+    color: brown;
+    margin-top: 20px;
+}
+.bulle, .petit, .yen, .pet, .moyen{
+    position: absolute;
+    cursor: crosshair;
+    overflow: hidden;
+    opacity: 0.4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+        }
+
+        .from-top {
+            animation-name: fromTop;
+        }
+
+        .from-bottom {
+            animation-name: fromBottom;
+        }
+
+        .from-left {
+            animation-name: fromLeft;
+        }
+
+        .from-right {
+            animation-name: fromRight;
+        }
+
+        @keyframes fromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fromRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+.bulle{
+    width: 250px;
+    height: 250px;
+    border-radius: 300px;
+    transition: transform 0.3s linear infinite;
+}
+.petit{
+    width: 100px;
+    height: 100px;
+    margin-left: 80%;
+    border-radius: 100px;
+    transition: transform 0.3s linear infinite;
+}
+.moyen{
+    width: 150px;
+    height: 150px;
+    margin-left: 45%;
+    border-radius: 150px;
+    transition: transform 0.3s linear infinite;
+}
+.yen{
+    width: 200px;
+    height: 200px;
+    margin-left: 25%;
+    border-radius: 200px;
+    transition: transform 0.3s linear infinite;
+}
+.pet{
+    width: 50px;
+    height: 50px;
+    margin-left: 60%;
+    border-radius: 50px;
+    transition: transform 0.3s linear infinite;
+}
+
+
